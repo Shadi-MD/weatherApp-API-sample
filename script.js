@@ -9,7 +9,7 @@ let info = document.querySelector(".info");
 let icon = document.querySelector(".current-temperature-icon");
 
 let apiKey = "20fb605b4a20d8452ab62fbfto73c4a8";
-let now = new Date();
+
 
 let days = [
   "Sunday",
@@ -23,7 +23,7 @@ let days = [
 
 function enterCity(event) {
   event.preventDefault();
-
+let now = new Date();
   let userCity = inputElem.value;
   currentCity.innerHTML = userCity;
   changeDate(now);
